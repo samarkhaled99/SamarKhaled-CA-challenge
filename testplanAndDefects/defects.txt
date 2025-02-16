@@ -1,0 +1,139 @@
+BugTitle: "Payment form accepts invalid card details"
+
+Type: Functional
+Severity: High 
+Priority: High 
+
+Steps to Reproduce:
+Go to Cart
+Click on Place prder 
+Enter invalid credit card details (e.g., 11)
+Click "Purchase"
+
+Expected Result: Should show an error message.
+Actual Result: System proceeds with transaction successfully.
+
+--------------------------------------------------------------------------
+
+BugTitle: "Missing User Address Field in Payment Form"
+
+Type: Functional
+Severity: High 
+Priority: High 
+
+Steps to Reproduce:
+Go to Cart
+Click on Place prder 
+Enter Name and Credit card number
+Click "Purchase"
+
+Expected Result: The User Address field should be present in the checkout form, Users should be required to enter a valid address before completing the transaction.
+If the address is missing, an error message should be displayed, preventing the transaction from proceeding.
+
+Actual Result: The User Address field is missing from the checkout form, The system allows the purchase to proceed without an address.
+
+--------------------------------------------------------------------------
+
+BugTitle: No Validation on Any Field in Contact Us Form
+
+Type: Functional
+Severity: High 
+Priority: High 
+
+Steps to Reproduce:
+Navigate to Contact Us
+Enter Invalid Email and  click on send message button
+Navigate to contact Us 
+Clic on Send Message button without Enter any data in the fields
+
+Expected Result:
+The email field should allow only properly formatted email addresses (e.g., "user@example.com").
+The name, email and message fields should be required and display an error message when left empty.
+Appropriate validation messages should be shown for incorrect inputs.
+
+Actual Result:
+The email field accepts invalid formats (e.g., "abc@com", "user@.com").
+The name, email and message fields can be submitted empty without validation.
+
+--------------------------------------------------------------------------
+
+BugTitle: Categories Not Filtering Correctly
+
+Bug Type: Functional
+Severity: Medium 
+Priority: Medium 
+
+Steps to Reproduce:
+From Home Page Navigate to Categories
+Select the Laptops category
+Click Previous to go back
+
+Expected Result:
+Only Laptops should be displayed after selecting the category, The filter should persist correctly when navigating back.
+No unrelated products should appear in the filtered results.
+
+Actual Result:
+The page displays products from Laptops and Phones, instead of filtering correctly.
+
+--------------------------------------------------------------------------
+
+BugTitle: Footer is Not Fixed on the Page
+
+Type: UI/UX
+Severity: Medium 
+Priority: Low
+
+Steps to Reproduce:
+Navigate to any page with minimal content (ex.cart page when no item selected)
+Scroll down and observe the footer position
+Resize the browser window or add/remove content
+
+Expected Result:
+The footer should remain fixed at the bottom of the page, regardless of content height.
+
+Actual Result:
+The footer does not remain fixed at the bottom of the viewport.
+On pages with little content, the footer appears in the middle of the screen.
+
+--------------------------------------------------------------------------
+
+BugTitle: Mobile Layout Overlaps on Homepage
+
+Type: UI/UX
+Severity: Medium
+Priority: Medium
+
+Steps to Reproduce:
+Open the homepage on a mobile device
+Select product and click on it to view the product details
+Scroll through the page and observe the layout
+
+Expected Result:
+The homepage should be fully responsive on mobile devices.
+Text and images should be properly aligned without overlap.
+All content should be readable and well-structured across different screen sizes.
+
+Actual Result:
+Text and images overlap.
+Some elements are misaligned or cut off.
+The layout does not adapt properly to different screen sizes.
+
+--------------------------------------------------------------------------
+
+BugTitle: Email in Footer (About Section) is Not Clickable on Web
+
+Type: UI/UX
+Severity: Low
+Priority: Low 
+
+Steps to Reproduce:
+Navigate to the About section in the footer
+Locate the displayed email address
+Try clicking on the email address
+
+Expected Result:
+The email should be a clickable mailto link (e.g., <a href="mailto:support@example.com">support@example.com</a>).
+Clicking on the email should open the default email client with the recipient field pre-filled.
+
+Actual Result:
+The email address is displayed as plain text and does not open an email client when clicked.
