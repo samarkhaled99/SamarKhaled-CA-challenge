@@ -1,4 +1,4 @@
-gitgit add .1. Test Plan For https://www.demoblaze.com/
+1. Test Plan For https://www.demoblaze.com/
 
 User Account & Authentication
 •	Successful User Registration (valid/invalid email, duplicate accounts).
@@ -34,7 +34,7 @@ Security Testing
 •	 Secure password encryption & storage (no plaintext passwords).
 •	 Validate session expiration after logout or inactivity.
 
-2️. Prioritization of Test Cases (Based on Business Impact)
+2. Prioritization of Test Cases (Based on Business Impact)
 
 Priority	Test Category	                          Reason
 🟥 High	        Login & Authentication	                  Without login, users cannot make purchases.
@@ -46,4 +46,6 @@ Priority	Test Category	                          Reason
 🟩 Low	        Performance (500 users stress test)	  Important but not urgent for small sites.
 🟩 Low	        Profile Update Functionality	          Less critical than purchases.
 
+3. Resourses
+4. in/out Scope
 
