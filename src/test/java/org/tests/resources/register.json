@@ -1,0 +1,13 @@
+{
+  "validCredentials":
+  {
+    "email":"samarkhaled074@gmail.com",
+    "firstName": "samar",
+    "lastName": "khaled",
+    "postalCode": "55555",
+    "dogCount" : "2",
+    "catCount" : "2",
+    "password":"Sk@1234t"
+  }
+
+}
