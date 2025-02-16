@@ -1,0 +1,49 @@
+gitgit add .1. Test Plan For https://www.demoblaze.com/
+
+User Account & Authentication
+•	Successful User Registration (valid/invalid email, duplicate accounts).
+•	 Correct behavior for Login/Logout (valid/invalid credentials, session handling).
+•	Profile update works as expected (name, email, password).
+Core E-commerce Functionality
+•	 Homepage loads correctly with featured products.
+•	 Product categories filter items properly.
+•	 Product details page displays correct information (name, price, description, image).
+•	 Add to Cart functionality works correctly.
+•	 Cart page correctly updates with added/removed products.
+•	 Checkout process completes successfully with valid inputs.
+•	 Order confirmation displays correct details after purchase.
+•	Validate that the contact us feature works correctly
+•	Validate that the about page has correct information
+Payment & Transactions
+•	 Ensure payment gateway integration works correctly.
+•	 Handle valid/invalid payment details.
+•	 Display correct pricing, taxes, and discounts.
+•	 Verify transaction history is correctly recorded.
+UI/UX & Accessibility
+•	 Responsive design across devices (mobile, tablet, desktop).
+•	 Intuitive navigation, CTA buttons work properly.
+•	 Text, images, and layout display correctly.
+•	 Adherence to accessibility standards (keyboard navigation, screen reader compatibility).
+Performance & Load Testing
+•	Fast page load times (~3s per page).
+•	Cart/checkout processes remain smooth under high traffic.
+•	Stress test for concurrent users (e.g., 500 users checking out simultaneously).
+Security Testing
+•	 Check SQL Injection vulnerabilities (e.g., login form, search field).
+•	 Prevent Cross-Site Scripting (XSS) on product pages and input fields.
+•	 Secure password encryption & storage (no plaintext passwords).
+•	 Validate session expiration after logout or inactivity.
+
+2️. Prioritization of Test Cases (Based on Business Impact)
+
+Priority	Test Category	                          Reason
+🟥 High	        Login & Authentication	                  Without login, users cannot make purchases.
+🟥 High	        Add to Cart & Checkout	                  A broken cart/checkout means lost revenue.
+🟥 High	        Payment Processing	                  Directly impacts financial transactions.
+🟧 Medium	Product Categories & Filtering	          Users need this for better browsing.
+🟧 Medium	UI Responsiveness & Layout	          Affects usability across devices.
+🟧 Medium	Security Testing (SQLi, XSS)	          Can lead to data breaches.
+🟩 Low	        Performance (500 users stress test)	  Important but not urgent for small sites.
+🟩 Low	        Profile Update Functionality	          Less critical than purchases.
+
+
